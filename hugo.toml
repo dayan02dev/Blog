@@ -1,4 +1,4 @@
-baseURL = 'https://yourblog.netlify.app/'
+baseURL = 'https://dayan02dev.github.io/Blog/'
 languageCode = 'en-us'
 title = 'My Awesome Blog'
 theme = 'PaperMod'
