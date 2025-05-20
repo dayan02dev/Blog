@@ -1,0 +1,64 @@
+baseURL = 'https://yourblog.netlify.app/'
+languageCode = 'en-us'
+title = 'My Awesome Blog'
+theme = 'PaperMod'
+
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+[params]
+  env = "production"
+  description = "My personal blog where I share my thoughts and experiences"
+  author = "Your Name"
+  # defaultTheme = "auto" # dark, light, auto
+  mainSections = ["posts"]
+  ShowReadingTime = true
+  ShowShareButtons = true
+  ShowPostNavLinks = true
+  ShowBreadCrumbs = true
+  ShowCodeCopyButtons = true
+  ShowRssButtonInSectionTermList = true
+  ShowToc = true
+
+[params.homeInfoParams]
+  Title = "Welcome to My Blog"
+  Content = """
+  This is where I share my thoughts, experiences, and knowledge.
+  
+  - **Easy to read** with a clean, modern design
+  - **Fast loading** thanks to Hugo's speed
+  - **Automatically deployed** whenever I push to Git
+  """
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/yourusername"
+
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/yourusername"
+
+[menu]
+  [[menu.main]]
+    identifier = "categories"
+    name = "Categories"
+    url = "/categories/"
+    weight = 10
+  [[menu.main]]
+    identifier = "tags"
+    name = "Tags"
+    url = "/tags/"
+    weight = 20
+  [[menu.main]]
+    identifier = "archives"
+    name = "Archives"
+    url = "/archives/"
+    weight = 30
+  [[menu.main]]
+    identifier = "about"
+    name = "About"
+    url = "/about/"
+    weight = 40
