@@ -13,8 +13,8 @@ A personal blog built with Hugo and the PaperMod theme. This project follows the
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/yourusername/my-awesome-blog.git
-   cd my-awesome-blog
+   git clone https://github.com/dayan02dev/Blog.git
+   cd Blog
    ```
 
 2. Run the Hugo development server:
