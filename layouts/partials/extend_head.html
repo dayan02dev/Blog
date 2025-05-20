@@ -1,0 +1,6 @@
+{{- /* This file allows you to add custom CSS */ -}}
+{{- /* Add your custom CSS here */ -}}
+
+{{- $css := resources.Get "css/extended.css" -}}
+{{- $style := $css | resources.Minify | resources.Fingerprint -}}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}" integrity="{{ $style.Data.Integrity }}"> 

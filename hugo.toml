@@ -13,7 +13,8 @@ enableEmoji = true
   env = "production"
   description = "My personal blog where I share my thoughts and experiences"
   author = "Your Name"
-  # defaultTheme = "auto" # dark, light, auto
+  defaultTheme = "dark" # dark, light, auto
+  disableThemeToggle = false
   mainSections = ["posts"]
   ShowReadingTime = true
   ShowShareButtons = true
@@ -32,6 +33,23 @@ enableEmoji = true
   - **Fast loading** thanks to Hugo's speed
   - **Automatically deployed** whenever I push to Git
   """
+
+# Customize theme appearance
+[params.assets]
+  favicon = "/favicon.ico"
+  favicon16x16 = "/favicon-16x16.png"
+  favicon32x32 = "/favicon-32x32.png"
+  apple_touch_icon = "/apple-touch-icon.png"
+  
+# Theme colors
+[params.profileMode]
+  enabled = false
+  
+# Dark mode customization
+[params.label]
+  text = "Home"
+  icon = "/apple-touch-icon.png"
+  iconHeight = 35
 
 [[params.socialIcons]]
   name = "github"
